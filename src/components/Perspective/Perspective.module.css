@@ -1,0 +1,14 @@
+.perspective {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 60%;
+  height: 40%;
+  background-color: hsl(195deg, 20%, 86%);
+}
+
+@media screen and (max-width: 425px) {
+  .perspective {
+    display: none;
+  }
+}

@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import CharacterEditor from './components/CharacterEditor';
-import Footer from './components/Footer';
+import Perspective from "./components/Perspective/Perspective";
+import CharacterEditor from "./components/CharacterEditor";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
+      <Perspective />
       <CharacterEditor />
       <Footer />
     </>
