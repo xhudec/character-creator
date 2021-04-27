@@ -4,7 +4,6 @@
 }
 
 .maxWidthWrapper {
-  margin: auto;
 }
 
 .header {
@@ -37,4 +36,31 @@
 .controlColumn {
   position: relative;
   max-width: 50%;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    display: none;
+  }
+
+  .characterWrapper {
+    left: 0;
+    width: 100%;
+  }
+
+  .controlColumn {
+    position: fixed;
+    top: 70%;
+    left: 0;
+    padding: 0 16px 0;
+    max-width: 100%;
+    overflow-x: auto;
+    z-index: 1;
+
+    /* hacking with flex... not sure what else I would use apart from grid 🤷🏻‍♂️ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
 }
